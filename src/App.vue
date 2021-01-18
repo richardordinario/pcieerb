@@ -1,8 +1,12 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+        <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-card>
+      <v-card-text>
+        Im a card
+      </v-card-text>
+    </v-card>
+  </v-app>
 </template>
 
 <script>
