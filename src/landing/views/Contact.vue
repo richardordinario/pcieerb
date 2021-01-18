@@ -6,10 +6,10 @@
   >
     <v-container fluid class="overlay">
         <v-layout justify-center>
-            <v-flex sm10 md10 lg7>
+            <v-flex xs12 sm10 md10 lg7>
                 <v-layout row wrap justify-center class="pa-5">
-                    <v-flex md6>
-                        <div class="ma-10">
+                    <v-flex xs12 md6>
+                        <div :class="{'ma-10': !$vuetify.breakpoint.smAndDown}">
                             <p class="overline ">Name</p>
                             <v-text-field
                             class=""
@@ -28,7 +28,7 @@
                         </div>
                     </v-flex>
                     <v-flex md6>
-                        <div class="ma-10">
+                        <div :class="{'ma-10': !$vuetify.breakpoint.smAndDown}">
                             <p class="overline">Message</p>
                             <v-textarea solo></v-textarea>
                             <v-btn block class="pr-10 darken-4 white--text pa-6" color="blue-grey"> Send <v-icon>mdi-telegram</v-icon></v-btn>

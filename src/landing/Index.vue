@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-app id="inspire">
     <v-parallax 
         height="auto"
         :src="require('../assets/images/landing/parallax.png')"
@@ -29,7 +29,7 @@
     <About/>
     <Contact/>
 
-  </div>
+  </v-app>
 
 </template>
 
