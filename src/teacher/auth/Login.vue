@@ -12,7 +12,7 @@
                           outlined
                           dense
                           ></v-text-field>
-                           <label >Password</label>
+                           <label>Password</label>
                           <v-text-field
                           outlined
                           dense
@@ -21,9 +21,17 @@
                           color="teal"
                           class="white--text"
                           block
+                          x-large
+                          @click="login"
                           >Login</v-btn>
                       </v-form>
                   </v-card-text>
+                  <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <a href="/teacher-register">
+                            <v-btn small plain text>Need an account?</v-btn>
+                        </a>
+                  </v-card-actions>
               </v-card>
           </v-flex>
       </v-layout>
@@ -34,7 +42,17 @@
 
 <script>
 export default {
-
+    data() {
+        return {
+            auth: ''
+        }
+    },
+    methods: {
+        login() {
+            localStorage.setItem('auth', true)
+            window.location = '/teacher'
+        }
+    },
 }
 </script>
 

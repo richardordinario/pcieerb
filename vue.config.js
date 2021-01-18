@@ -13,10 +13,22 @@ module.exports = {
             chunks: ['chunk-vendors', 'chunk-common', 'index']
         },
         'teacher-login': {
-            entry: 'src/teacher/auth/login.js',
+            entry: 'src/teacher/auth/js/login.js',
             template: 'public/index.html',
             title: 'Teacher Login',
             chunks: ['chunk-vendors', 'chunk-common', 'teacher-login']
-        }
+        },
+        'teacher-register': {
+            entry: 'src/teacher/auth/js/register.js',
+            template: 'public/index.html',
+            title: 'Teacher Register',
+            chunks: ['chunk-vendors','chunk-common', 'teacher-register']
+        },
+        'teacher': {
+            entry: 'src/teacher/main.js',
+            template: 'public/index.html',
+            title: 'Teacher Dashboard',
+            chunks: ['chunk-vendors','chunk-common', 'teacher']
+        },
     }
 }

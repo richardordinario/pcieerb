@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import Login from './Login.vue'
-import Vuetify from '../../plugins/vuetify'
+import Login from '../Login.vue'
+import Vuetify from '../../../plugins/vuetify'
 
 Vue.config.productionTip = false
 

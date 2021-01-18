@@ -84,6 +84,6 @@ export default {
 <style>
 .tour-section {
     background: #F7F7F7;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 </style>
